@@ -13,11 +13,10 @@ Schroeder Reverb Variation implemented on a microcontroller (Daisy Seed). The Pr
 The hardware setup included soldering various components on a PCB board using both THS and SMD techniques.
 
 Soldered components include:
-- Barrel Power Connector
-- LED power indicator
-- Potentiometers
-- Audio Jacks (TRS)
-- Small components (resistors, capacitors)
+- Barrel Power Connector, LED power indicator
+- Control Elements: Potentiometers, Button
+- Audio Input/Outut: TRS jacks
+- Small components: Resistors, Capacitors
 
 ## Concept
 This project is based on the original groundbreaking Schroeder Reverb from the 1960s. The Schroeder Reverb as described in [1] consists of three Allpass Filters (AP) followed by a parallel bank of Feedback Comb Filters (FBC). All filters contain varying delay and decay times. I enhanced this design by adding an additional AP and four additional FBCs to enhance the reverberation effect. While the decay parameters are copied as is (and slightly varied for the added filters), I increased the delay legths significantly by ear (the base values did not produce a strong reverberation in my implementation).
