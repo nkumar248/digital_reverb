@@ -37,18 +37,20 @@ The concept was implemented in C++ from scratch (using a blank DaisySeed project
 
 ### Example 1: Drum Loop
 
-Reverb: Off.
 
 https://github.com/user-attachments/assets/d616ea1d-ac11-44e4-9ed1-79dd8cb6d8c9
 
-Reverb: On, Size: ~0%, Wet: 50%
+Reverb: Off.
+
 
 https://github.com/user-attachments/assets/9247a909-1b5f-4931-9d35-ac58ff8791a5
 
-Reverb: On, Size: ~100%, Wet: 50%
+Reverb: On, Size: ~0%, Wet: 50%
+
 
 https://github.com/user-attachments/assets/254d724f-d54a-419e-bde3-ca60c3e0abf6
 
+Reverb: On, Size: ~100%, Wet: 50%
 
 ### More examples soon
 [TODO]
