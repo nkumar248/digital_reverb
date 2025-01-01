@@ -71,7 +71,7 @@ Inspired by building this reverb I want to next either build a different audio e
 
 
 ## Disclaimer
-This project was conceptualized and completed in a voluntary participation in a course at ETH Zurich. It was a "passion participation" and I did not receive any credits for it as it was a course from the Electrical Engineering department.
+This project was conceptualized and completed in a voluntary participation in a course at ETH Zurich. It was a "passion participation" and I did not receive any credits for it as it was not a course from my department.
 
 
 [1]: https://ccrma.stanford.edu/~jos/pasp/Schroeder_Reverberators.html
