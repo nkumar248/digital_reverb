@@ -56,16 +56,23 @@ Reverb: On, Size: ~100%, Wet: 50%
 [TODO]
 
 
-### Glitch example
+### Glitch Example
 Reverb size modulation during audio playback causes audible glitches.
 
 https://github.com/user-attachments/assets/49df506e-d5ab-418a-9e3a-f1bea5bb03ea
 
 
-## Evaluation and Improvements
-This was my first attempt at writing an audio effect in general and it was a big learning experience. Key learnings included digital reverb concepts and design choices, digital audio processing, C++ programming, and hands-on "hardware construction" (pcb soldering). The results sound good in my opinion, especially considering that the architecture is fairly simple. Even the reverb tails sound pretty good after increasing the parallel FBC bank to 8 units. 
+## Summary
+This was my first attempt at writing an audio effect in general and it was a big learning experience. The key learnings include (in no particular order):
+- Digital audio processing
+- Digital reverb concepts and design choices (e.g. feedback delay network vs convolution reverb)
+- Matlab simulation
+- C++ programming
+- Hands-on "hardware construction" (pcb soldering)
 
-Above is an example of how the MCU produces audible glitches when the reverb size is modulated during audio playback. This happens because the internal buffers' maximum read/write index (the actual data structures are fixed-size) are changed during playback and this causes abrupt changes in the signals read from the different buffers which in turn causes audible glitches. I implemented smoothing (the buffers' maximum read/write indices are adapted gradually upon user input) but this did not solve the problem. From experience with professional digital plugins I know that those have these audible glitches too so it may not be a fully solvable problem. 
+The results sound good in my opinion, especially considering that the architecture is fairly simple. Even the reverb tails sound pretty good after increasing the parallel FBC bank size to 8 units. 
+
+Above is an example of how the MCU produces audible glitches when the reverb size is modulated during audio playback. This happens because the internal buffers' maximum read/write index (the actual data structures are fixed-size) are changed during playback and this causes abrupt changes in the signals read from the different buffers which in turn causes audible glitches. I implemented smoothing (the buffers' maximum read/write indices are adapted gradually upon user input) but this did not solve the problem. From experience with professional reverb plugins in DAWs I know that those have these audible glitches too so it may not be a fully solvable problem. 
 
 Inspired by building this reverb I want to next either build a different audio effect (e.g. distortion), a synthesizer, or a different reverb (e.g. a convolution reverb). 
 
