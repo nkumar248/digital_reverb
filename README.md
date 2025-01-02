@@ -20,10 +20,10 @@ Soldered components include:
 
 
 ## Concept
-This project is based on the original Schroeder Reverb from the 1960s. The Schroeder Reverb as described in [1] consists of three Allpass Filters (AP) followed by a parallel bank of Feedback Comb Filters (FBC). All filters contain varying delay and decay times. This reverb design is a Feedback Delay Network (FDN) which is an ideal leightweight design option for programming on a microcontroler. I enhanced this design by adding an additional AP and four additional FBCs to enhance the reverberation effect. While the decay parameters are copied as is (and slightly varied for the added filters), I increased the delay legths significantly by ear (the base values did not produce a strong reverberation in my implementation). 
+This project is based on the original Schroeder Reverb from the 1960s. The Schroeder Reverb as described in [1] consists of three Allpass Filters (AP) followed by a parallel bank of Feedback Comb Filters (FBC). All filters contain varying delay and decay times. This reverb design is a Feedback Delay Network (FDN) which is an ideal leightweight design option for programming on a microcontroler. I enhanced this design by adding an additional AP and four additional FBCs to enhance the reverberation effect. While the decay parameters are copied as is (and slightly varied for the added filters), I increased the delay legths significantly by ear (even after adaption to modern sampling rate of 48 kHz the base values did not produce a strong reverberation in my implementation). 
 
 Also, I added two potentiometers that control the reverb "size" and the dry/wet mix. The reverb size parameter changes the delay lengths in all filters through a logarithmic mapping. I had included modulating the decay in all filters using the reverb size as well but this did not sound good in practice.  
-
+ 
 
 ![schroeder_reverb-1](https://github.com/user-attachments/assets/f9ec3a4c-8161-424d-862d-dac8188b8870)
 Black denotes the original Schroeder Reverb architecture ([1]), red denotes my additions for a stronger reverberation.
