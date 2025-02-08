@@ -1,7 +1,7 @@
 [WORK IN PROGRESS]
 
 # Digital Reverb on MCU
-Schroeder Reverb variation implemented on a microcontroller (Daisy Seed). The project included soldering various components on a PCB board as well as the software implementation of the reverb. 
+Schroeder Reverb variation implemented on a microcontroller (Daisy Seed). The project included soldering various components on a PCB as well as the software implementation of the reverb. 
 
 ## Hardware
 <p align="center">
@@ -10,7 +10,7 @@ Schroeder Reverb variation implemented on a microcontroller (Daisy Seed). The pr
        width="400"/>
 </p>
 
-The hardware setup included soldering various components on a PCB board using both THS and SMD techniques.
+The hardware setup included soldering various components on a PCB using both THS and SMD techniques.
 
 Soldered components include:
 - Barrel Power Connector, LED power indicator
